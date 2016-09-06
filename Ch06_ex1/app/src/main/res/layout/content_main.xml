@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="460dp"
+    android:layout_height="700dp" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="400dp"
+        android:layout_height="700dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img01" />
+
+    <Button android:id="@+id/btnNext"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:background="#4056b4"
+        android:layout_alignTop="@+id/imgPhoto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgPhoto"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</RelativeLayout>
